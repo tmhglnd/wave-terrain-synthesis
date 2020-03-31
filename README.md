@@ -42,3 +42,12 @@ This example patcher shows some of the possibilities for the th.wave.polar~ and 
 3. $ git clone https://github.com/tmhglnd/wave-terrain-synthesis.git
 4. restart Max8, open a new patcher
 ```
+
+# License
+
+The GNU Lesser GPL v.3
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
