@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 665.0, 184.0, 580.0, 614.0 ],
+		"rect" : [ 100.0, 100.0, 580.0, 614.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 665.0, 210.0, 580.0, 588.0 ],
+						"rect" : [ 0.0, 26.0, 580.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -799,7 +799,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 580.0, 588.0 ],
+						"rect" : [ 100.0, 126.0, 580.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1482,7 +1482,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 30.0, 479.0, 51.0 ],
-					"text" : "th.wave.polar~",
+					"text" : "th.wave.carte~",
 					"textcolor" : [ 0.23921599984169, 0.254902005195618, 0.278430998325348, 1.0 ]
 				}
 
