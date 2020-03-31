@@ -578,7 +578,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 280.5, 555.0, 253.0, 22.0 ],
+					"patching_rect" : [ 280.5, 555.0, 266.0, 22.0 ],
 					"text" : "jit.matrix #1 1 float32 512 512 @interp 1"
 				}
 
@@ -667,7 +667,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 353.5, 129.0, 54.5, 129.0 ],
+					"midpoints" : [ 353.5, 123.0, 54.5, 123.0 ],
 					"source" : [ "obj-13", 1 ]
 				}
 

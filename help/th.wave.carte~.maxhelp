@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 100.0, 580.0, 614.0 ],
+		"rect" : [ 665.0, 184.0, 580.0, 614.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 126.0, 580.0, 588.0 ],
+						"rect" : [ 665.0, 210.0, 580.0, 588.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -121,18 +121,6 @@
 									}
 ,
 									"varname" : "number[1]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-14",
-									"maxclass" : "newobj",
-									"numinlets" : 6,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 263.0, 255.0, 108.0, 22.0 ],
-									"text" : "scale~ -1 1 0.2 0.8"
 								}
 
 							}
@@ -233,7 +221,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "signal" ],
 									"patching_rect" : [ 30.0, 285.0, 252.0, 22.0 ],
-									"text" : "th.wave.polar~ wave-terrain @quality medium"
+									"text" : "th.wave.carte~ wave-terrain @quality medium"
 								}
 
 							}
@@ -257,7 +245,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 105.0, 480.0, 20.0 ],
-									"text" : "Modulate the radius for some interesting sounds",
+									"text" : "Modulate the y coordinate for some interesting sounds",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
@@ -272,7 +260,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 30.0, 479.0, 51.0 ],
-									"text" : "th.wave.polar~",
+									"text" : "th.wave.carte~",
 									"textcolor" : [ 0.23921599984169, 0.254902005195618, 0.278430998325348, 1.0 ]
 								}
 
@@ -280,15 +268,8 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"source" : [ "obj-13", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-9", 1 ],
-									"source" : [ "obj-14", 0 ]
+									"source" : [ "obj-13", 0 ]
 								}
 
 							}
@@ -639,7 +620,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "signal" ],
 									"patching_rect" : [ 30.0, 360.0, 230.0, 22.0 ],
-									"text" : "th.wave.polar~ wave-terrain @quality bad"
+									"text" : "th.wave.carte~ wave-terrain @quality bad"
 								}
 
 							}
@@ -679,7 +660,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 30.0, 479.0, 51.0 ],
-									"text" : "th.wave.polar~",
+									"text" : "th.wave.carte~",
 									"textcolor" : [ 0.23921599984169, 0.254902005195618, 0.278430998325348, 1.0 ]
 								}
 
@@ -903,6 +884,7 @@
 									"floatoutput" : 1,
 									"id" : "obj-5",
 									"maxclass" : "slider",
+									"min" : -1.0,
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
@@ -913,14 +895,14 @@
 											"parameter_type" : 0,
 											"parameter_longname" : "slider",
 											"parameter_initial_enable" : 1,
-											"parameter_mmax" : 1.0,
+											"parameter_mmax" : 2.0,
 											"parameter_initial" : [ 0.7734921816828 ],
 											"parameter_shortname" : "slider"
 										}
 
 									}
 ,
-									"size" : 1.0,
+									"size" : 2.0,
 									"varname" : "slider"
 								}
 
@@ -965,8 +947,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 243.0, 218.0, 95.0, 20.0 ],
-									"text" : "set the radius"
+									"patching_rect" : [ 243.0, 218.0, 116.0, 20.0 ],
+									"text" : "set the y coordinate"
 								}
 
 							}
@@ -1115,7 +1097,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "signal", "signal", "signal" ],
 									"patching_rect" : [ 30.0, 365.0, 232.0, 22.0 ],
-									"text" : "th.wave.polar~ wave-terrain @quality high"
+									"text" : "th.wave.carte~ wave-terrain @quality high"
 								}
 
 							}
@@ -1202,8 +1184,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 105.0, 480.0, 47.0 ],
-									"text" : "A polar coordinate system based wavetable reader, using poly~ for upsampling (for anti-aliasing), using gen~ for converting polar to cartesian, using jitter for reading from a wavetable matrix.",
+									"patching_rect" : [ 30.0, 105.0, 480.0, 60.0 ],
+									"text" : "A cartesian coordinate system based wavetable reader, using poly~ for upsampling (for anti-aliasing), using jitter for reading from a wavetable matrix. The x-coordinate is a cosine wave scrubbing the x-axis back and forth resulting in a continuous wave.\n",
 									"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 								}
 
@@ -1218,7 +1200,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 30.0, 479.0, 51.0 ],
-									"text" : "th.wave.polar~",
+									"text" : "th.wave.carte~",
 									"textcolor" : [ 0.23921599984169, 0.254902005195618, 0.278430998325348, 1.0 ]
 								}
 
@@ -1525,14 +1507,14 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "th.wave.polar~.maxpat",
+				"name" : "th.wave.carte~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/abstractions/wave-terrain-synthesis/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "_polar.tableread~.maxpat",
+				"name" : "_carte.tableread~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/abstractions/wave-terrain-synthesis/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
