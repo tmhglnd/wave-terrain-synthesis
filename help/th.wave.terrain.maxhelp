@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 644.0, 604.0 ],
+						"rect" : [ 100.0, 124.0, 644.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -300,7 +300,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 30.0, 479.0, 51.0 ],
-									"text" : "th.wave.table",
+									"text" : "th.wave.terrain",
 									"textcolor" : [ 0.23921599984169, 0.254902005195618, 0.278430998325348, 1.0 ]
 								}
 
@@ -438,7 +438,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 124.0, 644.0, 604.0 ],
+						"rect" : [ 0.0, 26.0, 644.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -522,7 +522,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 30.0, 387.0, 90.0, 35.0 ],
-									"text" : "jit_gl_texture u386010202"
+									"text" : "jit_gl_texture u835003867"
 								}
 
 							}
@@ -1115,7 +1115,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 30.0, 479.0, 51.0 ],
-									"text" : "th.wave.table",
+									"text" : "th.wave.terrain",
 									"textcolor" : [ 0.23921599984169, 0.254902005195618, 0.278430998325348, 1.0 ]
 								}
 
