@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 100.0, 124.0, 644.0, 604.0 ],
+						"rect" : [ 0.0, 26.0, 644.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -438,7 +438,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 644.0, 604.0 ],
+						"rect" : [ 100.0, 124.0, 644.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -475,7 +475,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 30.0, 387.0, 90.0, 35.0 ],
-									"text" : "jit_gl_texture u341004638"
+									"text" : "jit_gl_texture u217003315"
 								}
 
 							}
@@ -739,8 +739,21 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 265.5, 210.0, 50.0, 22.0 ]
+									"parameter_enable" : 1,
+									"patching_rect" : [ 265.5, 210.0, 50.0, 22.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_type" : 3,
+											"parameter_longname" : "number[2]",
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_initial" : [ 4.500000000000001 ],
+											"parameter_shortname" : "number[2]"
+										}
+
+									}
+,
+									"varname" : "number[2]"
 								}
 
 							}
@@ -788,8 +801,22 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 107.0, 210.0, 133.0, 22.0 ]
+									"parameter_enable" : 1,
+									"patching_rect" : [ 107.0, 210.0, 133.0, 22.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_enum" : [ "noise.perlin", "noise.simplex", "noise.cell", "noise.checker", "fractal.multi.rigid", "fractal.multi.hybrid", "fractal.fbm", "fractal.multi", "fractal.hetero", "distorted" ],
+											"parameter_type" : 2,
+											"parameter_longname" : "umenu",
+											"parameter_initial_enable" : 1,
+											"parameter_mmax" : 9,
+											"parameter_initial" : [ 1.0 ],
+											"parameter_shortname" : "umenu"
+										}
+
+									}
+,
+									"varname" : "umenu"
 								}
 
 							}
@@ -813,8 +840,21 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 30.0, 210.0, 50.0, 22.0 ]
+									"parameter_enable" : 1,
+									"patching_rect" : [ 30.0, 210.0, 50.0, 22.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_type" : 3,
+											"parameter_longname" : "number[3]",
+											"parameter_initial_enable" : 1,
+											"parameter_invisible" : 1,
+											"parameter_initial" : [ 2.38 ],
+											"parameter_shortname" : "number[3]"
+										}
+
+									}
+,
+									"varname" : "number[3]"
 								}
 
 							}
@@ -1316,8 +1356,11 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
+			"obj-3::obj-7" : [ "number[3]", "number[3]", 0 ],
+			"obj-3::obj-33" : [ "number[2]", "number[2]", 0 ],
 			"obj-3::obj-18" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-3::obj-12" : [ "number[5]", "number", 0 ],
+			"obj-3::obj-20" : [ "umenu", "umenu", 0 ],
 			"obj-3::obj-16" : [ "number[4]", "number[1]", 0 ],
 			"parameterbanks" : 			{
 
