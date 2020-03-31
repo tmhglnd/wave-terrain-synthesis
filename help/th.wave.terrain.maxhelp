@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 289.0, 98.0, 644.0, 630.0 ],
+		"rect" : [ 100.0, 98.0, 644.0, 630.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 644.0, 604.0 ],
+						"rect" : [ 100.0, 124.0, 644.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -260,7 +260,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_gl_texture", "jit_matrix" ],
 									"patching_rect" : [ 75.0, 330.0, 285.0, 35.0 ],
-									"text" : "th.wave.table no-render @enable 0 @quality medium @zoom 4 @basis noise.simplex @time 10"
+									"text" : "th.wave.terrain no-render @enable 0 @quality medium @zoom 4 @basis noise.simplex @time 10"
 								}
 
 							}
@@ -438,7 +438,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 289.0, 124.0, 644.0, 604.0 ],
+						"rect" : [ 0.0, 26.0, 644.0, 604.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -475,7 +475,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 30.0, 387.0, 90.0, 35.0 ],
-									"text" : "jit_gl_texture u906003998"
+									"text" : "jit_gl_texture u341004638"
 								}
 
 							}
@@ -704,7 +704,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 107.0, 188.0, 133.0, 20.0 ],
-									"presentation_linecount" : 2,
 									"text" : "basis function"
 								}
 
@@ -752,8 +751,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 168.5, 398.0, 90.0, 47.0 ],
-									"presentation_linecount" : 3,
+									"patching_rect" : [ 176.5, 398.0, 90.0, 47.0 ],
 									"text" : "matrix output for preview in jit.pwindow"
 								}
 
@@ -889,7 +887,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 148.0, 447.0, 131.0, 105.5 ]
+									"patching_rect" : [ 156.0, 447.0, 131.0, 105.5 ]
 								}
 
 							}
@@ -900,8 +898,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_gl_texture", "jit_matrix" ],
-									"patching_rect" : [ 30.0, 334.5, 137.0, 22.0 ],
-									"text" : "th.wave.table bfg-terrain"
+									"patching_rect" : [ 30.0, 334.5, 145.0, 22.0 ],
+									"text" : "th.wave.terrain bfg-terrain"
 								}
 
 							}
@@ -1342,7 +1340,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "th.wave.table.maxpat",
+				"name" : "th.wave.terrain.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/abstractions/wave-terrain-synthesis/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
