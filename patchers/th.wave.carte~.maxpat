@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 8,
+			"minor" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -47,7 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 510.0, 98.0, 435.0, 47.0 ],
-					"text" : "a cartesian coordinate wavetable reader\nTimo Hoogland (c) 2020, www.timohoogland.com\nGNU GPL v.3 License"
+					"text" : "a cartesian coordinate wavetable reader\nTimo Hoogland (c) 2020, www.timohoogland.com\nGNU LGPL v.3 License"
 				}
 
 			}
@@ -102,8 +102,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -155,7 +155,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 45.0, 45.0, 190.0, 22.0 ],
-									"text" : "in 1 @comment radius @default 1"
+									"text" : "in 1 @comment radius @default 0"
 								}
 
 							}
@@ -186,8 +186,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 8,
+							"minor" : 1,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -239,7 +239,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 45.0, 45.0, 190.0, 22.0 ],
-									"text" : "in 1 @comment radius @default 1"
+									"text" : "in 1 @comment radius @default 0"
 								}
 
 							}
@@ -302,7 +302,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 360.0, 300.0, 119.0, 22.0 ],
+					"patching_rect" : [ 360.0, 300.0, 123.0, 22.0 ],
 					"text" : "jit.matrix #1"
 				}
 
@@ -389,7 +389,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 100.5, 300.0, 160.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1
+						"embed" : 1,
+						"precision" : 6
 					}
 ,
 					"text" : "coll #0_quality @embed 1"
@@ -400,11 +401,11 @@
 				"box" : 				{
 					"comment" : "(signal) radius (0 to 1)",
 					"id" : "obj-26",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 325.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -413,11 +414,11 @@
 				"box" : 				{
 					"comment" : "(signal) angle (0 to 1)",
 					"id" : "obj-25",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 48.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -426,7 +427,7 @@
 				"box" : 				{
 					"comment" : "(signal) table-y",
 					"id" : "obj-20",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -438,7 +439,7 @@
 				"box" : 				{
 					"comment" : "(signal) table-x",
 					"id" : "obj-18",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -450,7 +451,7 @@
 				"box" : 				{
 					"comment" : "(signal) wavetable synth",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -478,7 +479,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 48.0, 450.0, 296.0, 35.0 ],
+					"patching_rect" : [ 48.0, 450.0, 297.0, 35.0 ],
 					"text" : "poly~ _carte.tableread~ 1 up 4 @args #1 512 1 @target 0 @parallel 1 @resampling 1"
 				}
 
@@ -658,15 +659,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "_carte.tableread~.maxpat",
-				"bootpath" : "~/Drive/work/code/max/sketches/terrain-waveshapers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

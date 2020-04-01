@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="th.wave.polar~">
+
+	<digest>
+		Wavetable generator from jit.gl.bfg
+	</digest>
+
+	<description>
+		Convert the jit.gl.bfg output to a 1 plane float32 matrix that can be used as wavetable lookup with the th.wave.polar~ and th.wave.carte~ objects. Export the wavetable as a binary jitter file with the write message. Modulate parameters of the bfg object such as zoom and time.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">thModules</metadata>
+		<metadata name="tag">msp</metadata>
+		<metadata name="tag">synthesis</metadata>
+		<metadata name="tag">wavetable</metadata>
+		<metadata name="tag">jitter</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="int">
+			<digest></digest>
+			<description></description>
+		</inlet>
+		<inlet id="1" type="int">
+			<digest></digest>
+			<description></description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="list">
+			<digest></digest>
+			<description></description>
+		</outlet>
+		<outlet id="1" type="dictionary">
+			<digest></digest>
+			<description></description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="wavetable-name" optional="0" type="symbol">
+			<digest>
+				The name of the wavetable that can be used with th.wave.polar~ or th.wave.carte~
+			</digest>
+			<description>
+				The name of the wavetable that can be used with th.wave.polar~ or th.wave.carte~
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="write">
+			<arglist>
+				<arg name="write" optional="1" type="symbol" />
+			</arglist>
+			<digest>
+				Write wavetable to disk
+			</digest>
+			<description>
+				Send a write message to open a dialog window where you can save the wavetable as a binary jitter file for reuse in your project without having to run the expansive gl.bfg object.
+				<br />
+				<br />
+				Optional second argument sets the path and filename where the file will be stored.
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="basis" get='0' set='1' type='symbol' size='1'>
+			<digest>
+				Basis function name
+			</digest>
+			<description>
+				The name of the basis function to use for the generation of the wavetable (default = noise.simplex). The name can either be set with a symbol or with an integer following this order:
+				<br />
+				noise.perlin, noise.simplex, noise.cell, noise.checker, fractal.multi.rigid, fractal.multi.hybrid, fractal.fbm, fractal.multi, fractal.hetero, distorted
+			</description>
+		</attribute>
+		<attribute name="zoom" get='0' set='1' type='float' size='1'>
+			<digest>
+				Dimensional zoom factor
+			</digest>
+			<description>
+				Adjust both the scale and offset values to simulate zooming in and out of the function center (default = 1). This will result in hearing more overtones in the waveshape.
+			</description>
+		</attribute>
+		<attribute name="time" get='0' set='1' type='float' size='1'>
+			<digest>
+				Time animation parameter
+			</digest>
+			<description>
+				Adjust this value to animate the noise function over time. This can be done by using a simple accumulator, or with an object like jit.mo.time. The time value can also be used to recall a specific part of the noise function if you want to store the wavetable settings.
+			</description>
+		</attribute>
+		<attribute name="enable" get='0' set='1' type='int' size='1'>
+			<digest>
+				Turn the rendering on or off (default = 1)
+			</digest>
+			<description>
+				Turn the rendering from the internal jit.world on or off. Setting this to off will save processing but requires you to bang the object in order to render the new wavetable.
+			</description>
+		</attribute>
+		<attribute name="quality" get='0' set='1' type='symbol' size='1'>
+			<digest>
+				The quality of the wavetable generator
+			</digest>
+			<description>
+				change the quality of the wavetable generator with the @quality attribute or with a message. The quality settings determine the usage of interpolation in the readback from texture to matrix and determines the dimensions of the wavetable. (default = high)
+				<br />
+				<br />
+				bad : 128 x 128 table, no interpolation<br />
+				low: 256 x 256 table, no interpolation<br />
+				medium: 256 x 256 table, linear interpolation<br />
+				high: 512 x 512 table, linear interpolation<br />
+				excellent: 1024 x 1024 table, linear interpolation
+			</description>
+		</attribute>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="th.wave.carte~"/>
+		<seealso name="th.wave.terrain"/>
+		<seealso name="th.comp~"/>
+		<seealso name="th.yafr~"/>
+		<seealso name="th.yafr.freeze~"/>
+		<seealso name="th.yafr.gliss~"/>
+	</seealsolist>
+</c74object>
