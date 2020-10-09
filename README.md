@@ -10,6 +10,8 @@
 
 A package of abstractions for polar, cartesian wavetable lookup and gl.bfg wavetable generation
 
+![preview](media/social.png)
+
 ![overview](media/overview.png)
 
 ## Contains
