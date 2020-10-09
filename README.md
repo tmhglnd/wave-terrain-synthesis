@@ -1,6 +1,6 @@
 # wave-terrain-synthesis
 
-**Please consider to [name a fair price](http://gumroad.com/tmhglnd)**
+**consider to [name a fair price](http://gumroad.com/tmhglnd)**
 
 **or [become a patron](http://patreon.com/timohoogland)**
 
@@ -8,7 +8,7 @@
 
 ## About
 
-A package of abstractions for polar, cartesian wavetable lookup and gl.bfg wavetable generation
+A package of abstractions for polar & cartesian wavetable lookup from a jit.matrix and wavetable generator with jit.gl.bfg
 
 ![preview](media/social.png)
 
